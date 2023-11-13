@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ratit</title>
+    <style>
+      .scoreForm,
+      .weightForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #333;
+        padding: 10px;
+      }
+      .inputGroup {
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+      }
+      .container {
+        display: flex;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form id="weightForm" class="weightForm">
+        <h1>Weight</h1>
+        <div class="inputGroup">
+          <label for="animationWeight">Animation: </label>
+          <input
+            type="number"
+            name="animationWeight"
+            min="0"
+            max="100"
+            value="15"
+          />
+        </div>
+        <div class="inputGroup">
+          <label for="soundWeight">Sound: </label>
+          <input
+            type="number"
+            name="soundWeight"
+            min="0"
+            max="100"
+            value="12"
+          />
+        </div>
+        <div class="inputGroup">
+          <label for="storyWeight">Story: </label>
+          <input
+            type="number"
+            name="storyWeight"
+            min="0"
+            max="100"
+            value="18"
+          />
+        </div>
+        <div class="inputGroup">
+          <label for="characterWeight">Character: </label>
+          <input
+            type="number"
+            name="characterWeight"
+            min="0"
+            max="100"
+            value="17"
+          />
+        </div>
+        <div class="inputGroup">
+          <label for="valueWeight">Value: </label>
+          <input
+            type="number"
+            name="valueWeight"
+            min="0"
+            max="100"
+            value="20"
+          />
+        </div>
+        <div class="inputGroup">
+          <label for="enjoymentWeight">Enjoyment: </label>
+          <input
+            type="number"
+            name="enjoymentWeight"
+            min="0"
+            max="100"
+            value="18"
+          />
+        </div>
+        <div class="inputGroup">
+          <label for="totalWeight">Total: </label>
+          <input
+            type="number"
+            name="totalWeight"
+            id="totalWeight"
+            min="100"
+            max="100"
+            disabled
+          />
+        </div>
+        <div>
+          <input type="submit" value="Calculate" />
+        </div>
+      </form>
+      <form id="scoreForm" class="scoreForm">
+        <h1>Score</h1>
+        <div class="inputGroup">
+          <label for="animation">Animation: </label>
+          <input type="number" name="animation" min="0" max="10" value="5" />
+        </div>
+        <div class="inputGroup">
+          <label for="sound">Sound: </label>
+          <input type="number" name="sound" min="0" max="10" value="5" />
+        </div>
+        <div class="inputGroup">
+          <label for="story">Story: </label>
+          <input type="number" name="story" min="0" max="10" value="5" />
+        </div>
+        <div class="inputGroup">
+          <label for="character">Character: </label>
+          <input type="number" name="character" min="0" max="10" value="5" />
+        </div>
+        <div class="inputGroup">
+          <label for="value">Value: </label>
+          <input type="number" name="value" min="0" max="10" value="5" />
+        </div>
+        <div class="inputGroup">
+          <label for="enjoyment">Enjoyment: </label>
+          <input type="number" name="enjoyment" min="0" max="10" value="5" />
+        </div>
+        <div class="inputGroup">
+          <label for="score">Score: </label>
+          <input
+            type="number"
+            name="score"
+            id="score"
+            min="0"
+            max="10"
+            disabled
+          />
+        </div>
+        <div>
+          <input type="submit" value="Calculate" id="scoreCalculate" disabled />
+        </div>
+      </form>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
